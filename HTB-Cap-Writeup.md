@@ -121,14 +121,15 @@ ftp> get user.txt
 
 ```bash
 cat user.txt
-55e10c5deb30c4bbf689a75dd11e02d6
+55e10c5deb30c4bbf689a75dd11e******
 ```
 
 🏁 First flag, easy W. But FTP's mid for actually doing anything, so time for a real shell:
+-- **You can get the flag and credentials yourself. I won't tell you.** --
 
 ```bash
 ssh nathan@10.129.50.142
-# Password: Buck3tH4TF0RM3!
+# Password: Buck3tH4T****3!
 ```
 
 We're in. Foothold secured as `nathan`.
