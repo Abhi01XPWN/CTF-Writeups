@@ -89,7 +89,7 @@ tshark -r 0.pcap -Y "ftp"
 ```
 Request: USER nathan
 Response: 331 Please specify the password.
-Request: PASS Buck3tH4TF0RM3!
+Request: PASS Buck3tH4T****3!
 Response: 230 Login successful.
 ```
 
@@ -97,7 +97,7 @@ FTP ships creds in **plaintext**, so this was basically handed to us on a platte
 
 ```
 Username: nathan
-Password: Buck3tH4TF0RM3!
+Password: Buck3tH4T****3!
 ```
 
 >  **Sensitive data location:** PCAP ID `0`, protocol = **FTP** (no encryption, rip)
@@ -110,7 +110,7 @@ Tested the creds on FTP first since trust issues:
 
 ```bash
 ftp 10.129.50.142
-# nathan / Buck3tH4TF0RM3!
+# nathan / Buck3tH4T****3!
 ```
 
 Walked away with `user.txt` immediately:
